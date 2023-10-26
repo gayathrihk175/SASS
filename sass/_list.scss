@@ -1,0 +1,16 @@
+/* variables */
+$div-background:blue;
+$box-clr:red;
+
+/* listing */
+.box {
+    text-align: center;
+}
+
+.box {
+    ul {
+        li {
+            color:$box-clr;
+        }
+    }
+}

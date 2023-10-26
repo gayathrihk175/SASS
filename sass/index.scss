@@ -1,0 +1,80 @@
+@use "list";
+
+/*Mathematical Operator*/
+@use "sass:math";
+
+/* mixin */
+@mixin theme($theme:yellow){
+    background-color:$theme;
+    width:70%;
+    height:100px;
+    text:align-center;
+    padding:20px;
+    margin : 1.5% auto;
+    border : 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.container {
+    background-color: list.$div-background;
+    color: white;
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.block-one {
+    @include theme;
+}
+
+.block-two {
+    @include theme($theme:red)
+}
+
+.section {
+    display:flex;
+    width: 900px;
+    border : 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    margin: 1.5% auto;
+
+    div {
+        height: 100px;
+        text-align: center;
+        background-color: list.$div-background;
+        margin: 1%;
+        border: 1px solid black;
+        color: aliceblue;
+        width:math.div(300,900) *100%;
+    }
+}
+
+/* placeholder class, which i am going to extend */
+%shared {
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    margin: 1.5% auto;
+}
+
+%not-shared {
+    display: flex;
+    flex-wrap: flex;
+}
+
+#one {
+    @extend %shared;
+    border-color: green;
+}
+
+#two {
+    @extend %shared;
+    border-color: red;
+}
+
+#three{
+    @extend %shared;
+    border-top: blue;
+}

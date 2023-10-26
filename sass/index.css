@@ -1,0 +1,80 @@
+/* variables */
+/* listing */
+.box {
+  text-align: center;
+}
+
+.box ul li {
+  color: red;
+}
+
+/*Mathematical Operator*/
+/* mixin */
+.container {
+  background-color: blue;
+  color: white;
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.block-one {
+  background-color: yellow;
+  width: 70%;
+  height: 100px;
+  text: align-center;
+  padding: 20px;
+  margin: 1.5% auto;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.block-two {
+  background-color: red;
+  width: 70%;
+  height: 100px;
+  text: align-center;
+  padding: 20px;
+  margin: 1.5% auto;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.section {
+  display: flex;
+  width: 900px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  padding: 10px;
+  margin: 1.5% auto;
+}
+.section div {
+  height: 100px;
+  text-align: center;
+  background-color: blue;
+  margin: 1%;
+  border: 1px solid black;
+  color: aliceblue;
+  width: 33.3333333333%;
+}
+
+/* placeholder class, which i am going to extend */
+#three, #two, #one {
+  border: 1px solid black;
+  padding: 10px;
+  color: white;
+  margin: 1.5% auto;
+}
+
+#one {
+  border-color: green;
+}
+
+#two {
+  border-color: red;
+}
+
+#three {
+  border-top: blue;
+}/*# sourceMappingURL=index.css.map */
